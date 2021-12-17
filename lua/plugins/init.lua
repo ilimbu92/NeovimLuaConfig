@@ -54,5 +54,17 @@ return require('packer').startup(function()
 
   use {'onsails/lspkind-nvim'}
   use 'norcalli/nvim-colorizer.lua'
+
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+    config = function()
+      require('gitsigns').setup {current_line_blame = true}
+    end
+    },
+    -- tag = 'release' -- To use the latest release
+  }
+  use 'tiagovla/tokyodark.nvim'
 end)
 

@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -164,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyodark.nvim"] = {
+    loaded = true,
+    path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/tokyodark.nvim",
+    url = "https://github.com/tiagovla/tokyodark.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
