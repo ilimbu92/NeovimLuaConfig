@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -174,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/ilimbu92/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyodark.nvim"] = {
     loaded = true,

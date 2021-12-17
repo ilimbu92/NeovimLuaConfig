@@ -66,7 +66,11 @@ return require('packer').startup(function()
     -- tag = 'release' -- To use the latest release
   }
   use 'tiagovla/tokyodark.nvim'
+
   use 'glepnir/dashboard-nvim'
 
+  use 'lukas-reineke/indent-blankline.nvim'
+
+  use {"akinsho/toggleterm.nvim"}
 end)
 

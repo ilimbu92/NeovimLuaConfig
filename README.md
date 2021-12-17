@@ -9,4 +9,5 @@
 7. Colorizer
 8. GitSign
 9. Dashboard
-
+10. Indent Blankline
+11. 
