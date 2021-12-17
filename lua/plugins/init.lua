@@ -6,10 +6,10 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'shaunsingh/nord.nvim'
-
+  -- use 'shaunsingh/nord.nvim'
+  use {'tiagovla/tokyodark.nvim', config = "vim.cmd('colorscheme tokyodark')"}
   use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate", event = "BufWinEnter", config = "require('treesitter-config')"}
-  use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}, event = "BufWinEnter", config = "require('lualine-config')"}
+  use {'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}, event = "BufWinEnter", config = "require('lualine-config')"}
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons', event = "BufWinEnter", config = "require('bufferline-config')"}
   use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons', cmd = "NvimTreeToggle", config = "require('nvim-tree-config')"}
   use {'windwp/nvim-ts-autotag', event = "InsertEnter", after = "nvim-treesitter"}
@@ -23,27 +23,20 @@ return require('packer').startup(function(use)
   use {'hrsh7th/nvim-cmp'}
   use {'hrsh7th/cmp-vsnip'}
   use {'hrsh7th/vim-vsnip'}
-
   use {'onsails/lspkind-nvim'}
   use {'norcalli/nvim-colorizer.lua', config = "require('colorizer-config')", event = "BufRead"}
-
   use {
     'lewis6991/gitsigns.nvim',
-    requires = {
-      'nvim-lua/plenary.nvim',
+    requires = {'nvim-lua/plenary.nvim'},
     config = function()
       require('gitsigns').setup {current_line_blame = true}
     end
-    },
-    -- tag = 'release' -- To use the latest release
   }
-  use 'tiagovla/tokyodark.nvim'
-
   use {'glepnir/dashboard-nvim', cmd = "Dashboard", config = "require('dashboard-config')"}
   use {"lukas-reineke/indent-blankline.nvim", config = "require('blankline-config')", event = "BufRead"}
+  use {'lukas-reineke/format.nvim', config = "require('format-config')", cmd = "Format"}
   use {"akinsho/toggleterm.nvim", config = "require('toggleterm-config')"}
   use {"terrortylor/nvim-comment", config = "require('comment-config')", cmd = "CommentToggle"}
-
+  use { 'tami5/lspsaga.nvim', config = "require('lspsaga-config')" }
 
 end)
-
