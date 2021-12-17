@@ -10,4 +10,7 @@
 8. GitSign
 9. Dashboard
 10. Indent Blankline
-11. 
+11. Auto Format
+12. Floating and split terminal
+13. Lazy Loading
+
