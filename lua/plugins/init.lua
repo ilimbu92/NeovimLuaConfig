@@ -66,5 +66,7 @@ return require('packer').startup(function()
     -- tag = 'release' -- To use the latest release
   }
   use 'tiagovla/tokyodark.nvim'
+  use 'glepnir/dashboard-nvim'
+
 end)
 

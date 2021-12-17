@@ -10,6 +10,7 @@ require('whichkey-config')
 require('telescope-config')
 require('lsp')
 require('colorizer-config')
+require('dashboard-config')
 -- init.lua
 vim.g.tokyodark_transparent_background = false
 vim.g.tokyodark_enable_italic_comment = true
