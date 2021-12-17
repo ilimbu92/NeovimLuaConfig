@@ -23,6 +23,13 @@ return require('packer').startup(function()
         'kyazdani42/nvim-web-devicons', -- optional, for file icon
       },
       config = function() require'nvim-tree'.setup {} end
+  }
 
-}end)
+  use {'windwp/nvim-ts-autotag'}
+
+  use {'p00f/nvim-ts-rainbow'} 
+
+  use { 'windwp/nvim-autopairs'}
+
+end)
 
